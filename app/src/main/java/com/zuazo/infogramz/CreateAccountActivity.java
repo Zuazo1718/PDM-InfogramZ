@@ -1,9 +1,15 @@
 package com.zuazo.infogramz;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+//cambie estas 3 lineas de codigo para solucionar tu error
 import android.os.Bundle;
-import android.widget.Toolbar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.widget.Toolbar;
+
+
+/**import androidx.appcompat.app.AppCompatActivity;
+
+ import android.os.Bundle;
+ import android.widget.Toolbar;*/
 
 public class CreateAccountActivity extends AppCompatActivity {
 
@@ -27,6 +33,7 @@ public class CreateAccountActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(botonSubir);
     }
 }
+
 
 
 
