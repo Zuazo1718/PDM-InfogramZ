@@ -3,7 +3,9 @@ package com.zuazo.infogramz;
 //cambie estas 3 lineas de codigo para solucionar tu error
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.widget.Toolbar;
+// Seras pendejo que no tenia q ir el .app
+//import androidx.appcompat.app.widget.Toolbar;
+import androidx.appcompat.widget.Toolbar;
 
 
 /**import androidx.appcompat.app.AppCompatActivity;
