@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateAccountActivity">
+    tools:context=".view.CreateAccountActivity">
 
 
     <include layout="@layout/appbar_toolbar"/>
@@ -94,6 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/button_Text_create_account"
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_marginTop="@dimen/marginTop_Create_Account">
                     <!-- android:theme="@style/RaiseButtonDark" -->
 

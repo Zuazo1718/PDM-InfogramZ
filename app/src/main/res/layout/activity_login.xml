@@ -74,8 +74,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/button_Text"
-
-                    android:layout_marginTop="@dimen/login_marginTop">
+                    android:backgroundTint="#1976D2"
+                    android:layout_marginTop="@dimen/login_marginTop"
+                    android:onClick="login">
                     <!-- android:theme="@style/RaiseButtonDark" -->
 
                 </Button>
