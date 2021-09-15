@@ -22,4 +22,5 @@
     <color name="textColor_White">#FFFFFF</color>
     
     <color name="item_white">#FFFFFF</color>
+    <color name="color_tint">#1976D2</color>
 </resources>
