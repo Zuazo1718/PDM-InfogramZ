@@ -43,6 +43,7 @@
                 android:orientation="horizontal">
 
                 <TextView
+                    android:id="@+id/cantidadDiasCardView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hace_cardview"
@@ -51,7 +52,6 @@
 
                 </TextView>
                 <TextView
-                    android:id="@+id/cantidadDiasCardView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/dias_cardview"

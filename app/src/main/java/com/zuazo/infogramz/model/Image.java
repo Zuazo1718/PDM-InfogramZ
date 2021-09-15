@@ -1,32 +1,32 @@
 package com.zuazo.infogramz.model;
 
 public class Image {
-    private String urlImagen;
-    private String Username;
+    private String urlImage;
+    private String username;
     private String cantidadDias;
     private String cantidadMeGusta;
 
-    public Image(String urlImagen, String username, String cantidadDias, String cantidadMeGusta) {
-        this.setUrlImagen(urlImagen);
+    public Image(String urlImage, String username, String cantidadDias, String cantidadMeGusta) {
+        this.setUrlImage(urlImage);
         this.setUsername(username);
         this.setCantidadDias(cantidadDias);
         this.setCantidadMeGusta(cantidadMeGusta);
     }
 
-    public String getUrlImagen() {
-        return urlImagen;
+    public String getUrlImage() {
+        return urlImage;
     }
 
-    public void setUrlImagen(String urlImagen) {
-        this.urlImagen = urlImagen;
+    public void setUrlImage(String urlImage) {
+        this.urlImage = urlImage;
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public void setUsername(String username) {
-        Username = username;
+        this.username = username;
     }
 
     public String getCantidadDias() {

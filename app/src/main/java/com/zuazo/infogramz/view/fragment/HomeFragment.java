@@ -71,20 +71,21 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        //ToolBar
-        showToolBar(getString(R.string.title_home_fragment), false, view);
+        //toolbar
+        showToolBar(getString(R.string.title_home_fragment), false,view);
 
-        //recycLearview
+        // recyclerview
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view);
 
-        //layout manager
+        //layoutmanager
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
-        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        linearLayoutManager.setOrientation(linearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
 
-        // el adapter
-        CardViewAdapter cardViewAdapter = new CardViewAdapter(biudImage(), R.layout.cardview_image, getActivity());
+        //el adapter
+        CardViewAdapter cardViewAdapter = new CardViewAdapter(builImages(), R.layout.cardview_image, getActivity());
         recyclerView.setAdapter(cardViewAdapter);
+
 
         return view;
     }
@@ -97,53 +98,23 @@ public class HomeFragment extends Fragment {
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(titulo);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(botonSubir);
     }
-    //Creamos la lista de imagenes
-    public ArrayList<Image> biudImage() {
+
+    //creamos la lista de imagenes
+    public ArrayList<Image> builImages(){
         ArrayList<Image> images = new ArrayList<>();
 
-        images.add(new Image("","Carlos Valdivia", "2 dias", "1 me gusta"));
-        images.add(new Image("","Luis Peres", "3 dias", "5 me gusta"));
-        images.add(new Image("","Fernando Torricos", "6 dias", "4 me gusta"));
-        images.add(new Image("","Maria Flores", "5 dias", "6 me gusta"));
-        images.add(new Image("","Rolando Morales", "3 dias", "2 me gusta"));
-        images.add(new Image("","Willian Jaimes", "4 dias", "5 me gusta"));
-        images.add(new Image("","Roberto Paniagua", "2 dias", "3 me gusta"));
-        images.add(new Image("","Lorena Herrera", "2 dias", "8 me gusta"));
-        images.add(new Image("","Laura Caceres", "6 dias", "3 me gusta"));
-        images.add(new Image("","Marcelo Rojas", "9 dias", "1 me gusta"));
+        images.add(new Image("","Carlos Valdivia","2 dias","1 me gusta"));
+        images.add(new Image("","Luis Peres","3 dias","5 me gusta"));
+        images.add(new Image("","Fernendo Torrico","6 dias","4 me gusta"));
+        images.add(new Image("","MAria Flores","5 dias","6 me gusta"));
+        images.add(new Image("","Rolando Morales","3 dias","2 me gusta"));
+        images.add(new Image("","WWillian Jaimes","4 dias","5 me gusta"));
+        images.add(new Image("","Roberto Pañagua","2 dias","3 me gusta"));
+        images.add(new Image("","Lorena Herrera","2 dias","8 me gusta"));
+        images.add(new Image("","Laura Caceres","6 dias","3 me gusta"));
+        images.add(new Image("","Marcelo Rojas","9 dias","1 me gusta"));
 
         return images;
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

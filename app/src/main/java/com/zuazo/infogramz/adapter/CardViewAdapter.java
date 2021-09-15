@@ -14,53 +14,35 @@ import com.zuazo.infogramz.R;
 import com.zuazo.infogramz.model.Image;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import static androidx.recyclerview.widget.RecyclerView.*;
-
-public class CardViewAdapter extends RecyclerView.Adapter <CardViewAdapter.CardViewHolder> {
-    //Lista de imagenes
-
+public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardViewHolder> {
+    //lista de imagenes
 
     private ArrayList<Image> images;
     private int resource;
     private Activity activity;
 
-    public CardViewAdapter(ArrayList<Image> images, int resource, Activity activity){
-
+    public CardViewAdapter (ArrayList<Image> images, int resource, Activity activity){
         this.images = images;
         this.resource = resource;
         this.activity = activity;
     }
-
     @NonNull
-    //@Override
-    public CardViewHolder onCreaCardViewHolder(@NonNull ViewGroup parent,int viewType){
-        View view = LayoutInflater.from(parent.getContext()).inflate(resource, parent,false);
-
+    @Override
+    public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(resource, parent, false);
 
         return new CardViewHolder(view);
     }
 
-    //@Override
-    public void onBinViewHolder(@NonNull CardViewHolder holder, int position){
+    @Override
+    public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         Image image = images.get(position);
         //image
 
-        holder.usernameCardView.setText(image.getUsername());
+        holder.usernameCardview.setText(image.getUsername());
         holder.cantidadDiasCardView.setText(image.getCantidadDias());
         holder.cantidadMeGustaCardView.setText(image.getCantidadMeGusta());
-
-    }
-
-    @NonNull
-    @Override
-    public CardViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
-    }
-
-    @Override
-    public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
 
     }
 
@@ -69,52 +51,19 @@ public class CardViewAdapter extends RecyclerView.Adapter <CardViewAdapter.CardV
         return images.size();
     }
 
-
     public class CardViewHolder extends RecyclerView.ViewHolder{
-        private ImageView imageCarView;
-        private TextView usernameCardView;
+        private ImageView imageCardView;
+        private TextView usernameCardview;
         private TextView cantidadDiasCardView;
         private TextView cantidadMeGustaCardView;
 
-        public CardViewHolder(@NonNull View itemView){
+        public CardViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            imageCarView = itemView.findViewById(R.id.imageCardView);
-            usernameCardView = itemView.findViewById(R.id.usernameCardView);
+            imageCardView = itemView.findViewById(R.id.imageCardView);
+            usernameCardview = itemView.findViewById(R.id.usernameCardView);
             cantidadDiasCardView = itemView.findViewById(R.id.cantidadDiasCardView);
             cantidadMeGustaCardView = itemView.findViewById(R.id.cantidadMeGustaCardView);
         }
-
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

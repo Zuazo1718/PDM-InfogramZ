@@ -14,11 +14,12 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
-            android:paddingTop="@dimen/padding_card"
+            android:padding="@dimen/padding_card"
             android:paddingLeft="@dimen/padding_card"
             android:paddingRight="@dimen/padding_card">
 
         </androidx.recyclerview.widget.RecyclerView>
+
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

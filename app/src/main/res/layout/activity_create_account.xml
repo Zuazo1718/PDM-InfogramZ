@@ -94,7 +94,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/button_Text_create_account"
-                    android:backgroundTint="@color/color_tint"
+                    android:backgroundTint="@color/colorPrimary"
                     android:layout_marginTop="@dimen/marginTop_Create_Account">
                     <!-- android:theme="@style/RaiseButtonDark" -->
 
