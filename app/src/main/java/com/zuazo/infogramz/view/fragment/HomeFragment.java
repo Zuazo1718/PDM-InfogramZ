@@ -103,16 +103,16 @@ public class HomeFragment extends Fragment {
     public ArrayList<Image> builImages(){
         ArrayList<Image> images = new ArrayList<>();
 
-        images.add(new Image("","Carlos Valdivia","2 dias","1 me gusta"));
-        images.add(new Image("","Luis Peres","3 dias","5 me gusta"));
-        images.add(new Image("","Fernendo Torrico","6 dias","4 me gusta"));
-        images.add(new Image("","MAria Flores","5 dias","6 me gusta"));
-        images.add(new Image("","Rolando Morales","3 dias","2 me gusta"));
-        images.add(new Image("","WWillian Jaimes","4 dias","5 me gusta"));
-        images.add(new Image("","Roberto Pañagua","2 dias","3 me gusta"));
-        images.add(new Image("","Lorena Herrera","2 dias","8 me gusta"));
-        images.add(new Image("","Laura Caceres","6 dias","3 me gusta"));
-        images.add(new Image("","Marcelo Rojas","9 dias","1 me gusta"));
+        images.add(new Image("https://media-cdn.tripadvisor.com/media/photo-s/0e/1b/f4/2a/fuerte-de-samaipata.jpg","Carlos Valdivia","2 dias","1 me gusta"));
+        images.add(new Image("https://www.laregion.bo/wp-content/uploads/2019/07/coroico-parapente.jpeg","Luis Peres","3 dias","5 me gusta"));
+        images.add(new Image("https://www.wamanadventures.com/blog/wp-content/uploads/2019/06/La-Laguna-Colorada-Waman-Adventures.jpg","Fernendo Torrico","6 dias","4 me gusta"));
+        images.add(new Image("http://assets.cdnelnuevodiario.com/ckeditor/2018/03/25/bolivia-teleferico-de-la-paz.jpg","MAria Flores","5 dias","6 me gusta"));
+        images.add(new Image("https://i2.wp.com/andorreandoporelmundo.com/wp-content/uploads/2019/02/IMG_5577.jpg?w=1000&ssl=1","Rolando Morales","3 dias","2 me gusta"));
+        images.add(new Image("https://media-cdn.tripadvisor.com/media/photo-s/01/3e/b8/46/puerta-del-sol-tiwanaku.jpg","WWillian Jaimes","4 dias","5 me gusta"));
+        images.add(new Image("https://laicismo.org/wp-content/uploads/2017/02/Monumento-Virgen-de-Socavon-en-Oruro-Bolivia.jpg","Roberto Pañagua","2 dias","3 me gusta"));
+        images.add(new Image("https://serturista.com/wp-content/uploads/2014/01/Castillo-de-la-Glorieta-2.jpg","Lorena Herrera","2 dias","8 me gusta"));
+        images.add(new Image("https://i1.wp.com/elcalderoviajero.com/wp-content/uploads/2018/04/bolivia-cochabamba-incachaca-15.jpg?w=750&ssl=1","Laura Caceres","6 dias","3 me gusta"));
+        images.add(new Image("https://www.lostiempos.com/sites/default/files/styles/noticia_detalle/public/media_imagen/2018/1/13/1-_roma_2-_hector_arnez.jpg?itok=UCQEK8Mi","Marcelo Rojas","9 dias","1 me gusta"));
 
         return images;
     }

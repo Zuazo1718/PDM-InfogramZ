@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.squareup.picasso.Picasso;
 import com.zuazo.infogramz.R;
 import com.zuazo.infogramz.model.Image;
 
@@ -39,6 +40,7 @@ public class CardViewAdapter extends RecyclerView.Adapter<CardViewAdapter.CardVi
     public void onBindViewHolder(@NonNull CardViewHolder holder, int position) {
         Image image = images.get(position);
         //image
+        Picasso.get().load(image.getUrlImage()).into(holder.imageCardView);
 
         holder.usernameCardview.setText(image.getUsername());
         holder.cantidadDiasCardView.setText(image.getCantidadDias());
