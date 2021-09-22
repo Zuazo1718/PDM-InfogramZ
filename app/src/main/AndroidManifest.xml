@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zuazo.infogramz">
 
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,8 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InfogramZ">
-        <activity android:name=".view.ContainerActivity"></activity>
-        <activity android:name=".view.ContainerActivity"
+
+        <activity android:name=".view.ContainerActivity" />
+        <activity
+            android:name=".view.ContainerActivity"
             tools:ignore="DuplicateActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -30,6 +31,13 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".LoginActivity" />
         </activity>
+        <activity
+            android:name=".view.ImageDetailActivity"
+            android:exported="true"
+            android:parentActivityName=".view.ContainerActivity"/>
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".view.ContainerActivity" />
     </application>
 
 </manifest>
